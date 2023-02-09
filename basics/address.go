@@ -21,7 +21,7 @@ import (
 	"encoding/base32"
 	"fmt"
 
-	"algorand.com/go-algorand-lib/crypto"
+	"github.com/winder/go-algorand-lib/crypto"
 )
 
 type (
