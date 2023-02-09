@@ -53,3 +53,8 @@ func DigestFromString(str string) (d Digest, err error) {
 func NewHash() hash.Hash {
 	return sha512.New512_256()
 }
+
+// Hash computes the SHASum512_256 hash of an array of bytes
+func Hash(data []byte) Digest {
+	return sha512.Sum512_256(data)
+}
