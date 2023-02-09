@@ -49,11 +49,6 @@ func DigestFromString(str string) (d Digest, err error) {
 	return d, err
 }
 
-// Hash computes the SHASum512_256 hash of an array of bytes
-func Hash(data []byte) Digest {
-	return sha512.Sum512_256(data)
-}
-
 // NewHash returns a sha512-256 object to do the same operation as Hash()
 func NewHash() hash.Hash {
 	return sha512.New512_256()
